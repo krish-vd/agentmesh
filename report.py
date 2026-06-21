@@ -355,7 +355,7 @@ def _bg_canvas(c, doc):
     c.setFont(SANS, 7.2)
     c.drawString(
         20 * mm, 13 * mm,
-        "Rule-based output from live market data. Verify every figure against primary sources. Not investment advice."
+        "Generated from live market data. Verify every figure against primary sources. Not investment advice."
     )
     c.drawRightString(
         W - 20 * mm, 13 * mm,
@@ -458,8 +458,7 @@ def generate_pdf(question: str, results: dict, verdict: dict,
             styles["title"]
         ),
         Paragraph(
-            '<font color="#9CA3AF">Method</font>  Rule-based, no LLM<br/>'
-            + (f'<font color="#9CA3AF">Exchange</font>  {(market_data or {}).get("exchange", "N/A")}' if market_data else ""),
+            (f'<font color="#9CA3AF">Exchange</font>  {(market_data or {}).get("exchange", "N/A")}' if market_data else ""),
             styles["label"]
         )
     ], [
