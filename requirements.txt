@@ -1,0 +1,7 @@
+openbb
+openbb-yfinance
+reportlab
+matplotlib
+python-dotenv
+requests
+pandas

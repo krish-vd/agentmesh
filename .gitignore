@@ -1,0 +1,8 @@
+.env
+outputs/*.pdf
+outputs/*.png
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ruff_cache/
